@@ -43,4 +43,3 @@ describe('Home', function() {
     rig.finish() //trigger the final render
   })
 })
-

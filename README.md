@@ -5,7 +5,7 @@ super boilerplate react-flux app with `hot-loading` enabled in dev. Uses:
   * `weback`
   * `karma` + `mocha` + `chai` for testing
   * `fluxxed_up` 
-  * `stylus` for css preprocessing 
+  * `sass` and `postcss` for css preprocessing 
 
 have fun!
 
@@ -22,8 +22,8 @@ have fun!
 `http://localhost:3001/#/`
 
 **Styles**
-The stylus pre-processor comes included, with the webpack loaders.
-global.styl is already imported in the build, make whatever changes you want there.
+The sass pre-processor comes included, with the webpack loaders.
+global.scss is already imported in the build, make whatever changes you want there.
 
 **Testing**
 Karma using mocha, and the fluxxed_up TestRig are included. Check examples for

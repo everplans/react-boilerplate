@@ -2,9 +2,7 @@ import UserActions from '../actions/UserActions'
 import StorePrototype from '../../node_modules/fluxxed_up/src/lib/StorePrototype'
 import { Dispatcher } from 'fluxxed_up'
 
-var UserStore = StorePrototype()
-
-module.exports = UserStore
+const UserStore = StorePrototype()
 
 Dispatcher.register(action => {
   switch (action.actionType) {
@@ -16,3 +14,5 @@ Dispatcher.register(action => {
       break
   }
 })
+
+export default UserStore

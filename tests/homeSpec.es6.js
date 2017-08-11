@@ -1,8 +1,9 @@
 import React from 'react'
-import Home from '../main/components/home/Home.react.es6'
 import { TestRig } from 'fluxxed_up'
 
-var rig
+import Home from '../main/components/home/Home.react.es6'
+
+let rig
 
 describe('Home', () => {
   beforeEach(() => {
