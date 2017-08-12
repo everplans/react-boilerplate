@@ -3,7 +3,7 @@ import KeyMirror from 'keymirror'
 import { ActionPrototype, Dispatcher } from 'fluxxed_up'
 import { fetch, post } from '../lib/webApi'
 
-var UserActions = assign({}, ActionPrototype, {
+const UserActions = assign({}, ActionPrototype, {
   Types: KeyMirror({
     GOT_USER_DATA: null,
     DID_UPDATE_USER: null
@@ -16,4 +16,4 @@ var UserActions = assign({}, ActionPrototype, {
   }
 })
 
-module.exports = UserActions
+export default UserActions

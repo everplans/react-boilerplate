@@ -12,17 +12,27 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.css$/,
-        loader: 'style!css'
+        test: /\.styl$/,
+        loaders: [
+          'style',
+          'css',
+          'postcss',
+          'stylus?paths=node_modules/&resolve url'
+        ]
       },
       {
-        test: /\.styl$/,
-        loader: 'style-loader!css-loader!stylus-loader?paths=node_modules/&resolve url'
-      }
+        test: /\.s?css$/,
+        loaders: [
+          'style',
+          'css',
+          'postcss',
+          'sass'
+        ]
+      },
     ]
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.jsx']
   },
   output: {
     filename: 'app.min.js'

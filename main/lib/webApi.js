@@ -30,9 +30,9 @@ export function buildRequest(method, data, actionType) {
 }
 
 function getErrors(res) {
-  var errorMsgs = ["Something went wrong, please try again"]
-  var errorObject = {errors: []}
-  var json
+  let errorMsgs = ["Something went wrong, please try again"]
+  let errorObject = {errors: []}
+  let json
   if ((json = JSON.parse(res.text))) {
     if (json['errors']) {
       errorObject['errors'] = json['errors']
